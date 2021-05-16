@@ -1,0 +1,40 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 20px 30px 0px 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+}
+
+.navSinscrire {
+    color: #0065fc;
+    font-weight: bold;
+    margin-right: 20px;
+}
