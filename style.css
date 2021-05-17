@@ -3,18 +3,20 @@ body {
     margin: 0;
 }
 
-/* En-tête */
+#bordersize {
+    margin: 20px 20px 0px 20px;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
-.logo img {
-    margin-left: 20px;
-}
+.logoreservia img {}
 
 nav ul {
+    margin: 0;
     display: flex;
     list-style: none;
     height: 100%;
@@ -25,6 +27,7 @@ nav li {
 }
 
 nav a {
+    padding-top: 16px;
     text-decoration: none;
     color: black;
 }
@@ -40,43 +43,93 @@ nav a:hover {
     margin-right: 20px;
 }
 
-/* Section 1 */
-.titresection-1 {
-    margin-left: 20px;
-}
-
-.titresection-1 h1 {
+/* Search section */
+.searchtitle h1 {
     font-weight: bold;
     font-size: 1.3em;
 }
 
-.titresection-1 p {
+.searchtitle p {
     font-size: 1em;
 }
 
-.recherche {
+.searchblock {
     display: flex;
+    height: 3em;
 }
 
 .logoloc {
-    margin-left: 20px;
     background-color: #f2f2f2;
     border-color: #f2f2f2;
     width: 3em;
-    height: 3em;
     border-radius: 1em 0em 0em 1em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.champrecherche {
-    width: 20em;
-    height: 3.5em;
+.searchfield {
+    width: 12em;
     border-color: #f2f2f2;
+    border-width: 1px;
+    border-style: solid;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
 }
 
+.searchbutton {
+    background-color: #0065FC;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 0em 1em 1em 0em;
+    width: 8em;
+}
 
+.logosearch {
+    display: none;
+}
+
+/* Filters section */
+.filters {
+    display: flex;
+    font-size: 1em;
+    color: black;
+    margin: 40px 0px 20px 0px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filterstitle {
+    margin-right: 35px;
+}
+
+.filterbutton {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1em;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: 12px solid #DEEBFF;
+    border-radius: 2em;
+}
+
+.filtername {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.info {
+    display: flex;
+}
 
 
 
