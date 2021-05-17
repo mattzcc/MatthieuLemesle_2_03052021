@@ -40,6 +40,42 @@ nav a:hover {
     margin-right: 20px;
 }
 
+/* Section 1 */
+.titresection-1 {
+    margin-left: 20px;
+}
+
+.titresection-1 h1 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.titresection-1 p {
+    font-size: 1em;
+}
+
+.recherche {
+    display: flex;
+}
+
+.logoloc {
+    margin-left: 20px;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    width: 3em;
+    height: 3em;
+    border-radius: 1em 0em 0em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.champrecherche {
+    width: 20em;
+    height: 3.5em;
+    border-color: #f2f2f2;
+}
+
 
 
 
