@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #bordersize {
     margin: 30px 30px 0px 30px;
 }
@@ -31,8 +36,6 @@ nav li {
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
     padding-top: 35px;
 }
 
@@ -80,6 +83,7 @@ nav a:hover {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     font-weight: bold;
+    padding-left: 15px;
 }
 
 .searchbutton {
@@ -167,11 +171,106 @@ nav a:hover {
     align-items: center;
 }
 
+/* Hébergements section */
+.hebergements {
+    display: flex;
+}
+
+#hebergements {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    max-width: 65%;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#hebergements h2 {
+    font-size: 1.3em;
+}
+
+.contenthebergements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenthebergements h4 {
+    align-self: flex-end;
+}
+
+.labelhebergements {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 150px;
+    height: 165px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+.labeldescription h3 {
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.labeldescription p {
+    font-size: 0.8em;
+    margin-top: 0px;
+}
+
+.labelimg img {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.stars {
+    display: flex;
+    color: #0065FC;
+    font-size: 0.8em;
+}
 
 
+/* Popular Section */
+.popularsection {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    max-width: 35%;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 30px;
+}
 
+.populartitle {
+    display: flex;
+}
 
+.populartitle h2 {
+    font-size: 1.3em;
+}
 
+.popularlabel {
+    display: flex;
+}
+
+.popularimg img {
+    width: 125px;
+    height: 120px;
+}
+
+.populardesc h3 {
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.populardesc p {
+    font-size: 0.8em;
+    margin-top: 0px;
+}
 
 /* Footer */
 footer {
