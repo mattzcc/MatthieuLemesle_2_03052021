@@ -177,12 +177,14 @@ nav a:hover {
     background-color: #f2f2f2;
     border-radius: 20px;
     max-width: 730px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 40px;
+    padding-right: 15px;
 }
 
 #hebergements h2 {
     font-size: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .hebergements {
@@ -197,9 +199,10 @@ nav a:hover {
 }
 
 .contenthebergements a {
-    max-width: 220px;
+    max-width: 200px;
     height: 165px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-right: 25px;
 }
 
 .contenthebergements h4 {
@@ -209,7 +212,7 @@ nav a:hover {
 .labelhebergements {
     display: flex;
     flex-direction: column;
-    max-width: 220px;
+    max-width: 200px;
     height: 165px;
     padding: 5px 5px 5px 5px;
     background-color: white;
@@ -218,19 +221,19 @@ nav a:hover {
 }
 
 .labeldescription h3 {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .labeldescription p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-top: 0px;
     margin-bottom: 5px;
 }
 
 .labelimg img {
-    min-width: 210px;
+    min-width: 190px;
     max-height: 100px;
     border-radius: 10px 10px 0px 0px;
 }
@@ -239,7 +242,7 @@ nav a:hover {
     display: flex;
     color: #0065FC;
     font-size: 0.8em;
-    align-items: center;
+    align-items: baseline;
 }
 
 .graystar {
@@ -257,24 +260,43 @@ nav a:hover {
     padding-left: 35px;
     padding-right: 35px;
     margin-left: 30px;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .populartitle {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
 }
 
 .populartitle h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.populartitle i {
     font-size: 1.3em;
+    margin-top: 4px;
 }
 
 .popularlabel {
     display: flex;
     background-color: white;
+    width: 300px;
+    max-height: 120px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(190, 190, 190);
+    margin: 10px 0px 10px 0px;
 }
+
+.popularsection a {
+    width: 300px;
+    max-height: 120px;
+    margin: 10px 0px 10px 0px;
+}
+
 
 .popularimg img {
     width: 125px;
@@ -282,16 +304,23 @@ nav a:hover {
     border-radius: 10px 0px 0px 10px;
 }
 
+.populardesc {
+    padding: 5px 0px 0px 15px;
+}
+
 .populardesc h3 {
-    font-size: 0.8em;
-    margin-top: 5px;
+    font-size: 0.9em;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 
 .populardesc p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-top: 0px;
-    margin-bottom: 5px;
+}
+
+.populardesc i {
+    margin-top: 30px;
 }
 
 /* Footer */
