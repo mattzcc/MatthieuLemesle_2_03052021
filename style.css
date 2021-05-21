@@ -336,6 +336,7 @@ nav a:hover {
 
 #activities {
     font-size: 1.3em;
+    margin: 50px 0px 20px 0px;
 }
 
 .activities {
@@ -431,12 +432,18 @@ nav a:hover {
 footer {
     background-color: #f2f2f2;
     display: flex;
+    margin-top: 50px;
 }
 
 footer ul {
     list-style: none;
+    line-height: 25px;
 }
 
 footer li {
-    font-size: 0.8em;
+    font-size: 0.9em;
+}
+
+footer div {
+    width: 35%;
 }
