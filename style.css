@@ -8,6 +8,10 @@ a {
     color: black;
 }
 
+img {
+    object-fit: cover;
+}
+
 #bordersize {
     margin: 30px 30px 0px 30px;
 }
@@ -176,7 +180,7 @@ nav a:hover {
 #hebergements {
     background-color: #f2f2f2;
     border-radius: 20px;
-    max-width: 730px;
+    width: 2fr;
     padding-left: 40px;
     padding-right: 15px;
 }
@@ -256,7 +260,7 @@ nav a:hover {
     flex-flow: column nowrap;
     background-color: #f2f2f2;
     border-radius: 20px;
-    max-width: 500px;
+    width: 1fr;
     padding-left: 35px;
     padding-right: 35px;
     margin-left: 30px;
@@ -321,6 +325,106 @@ nav a:hover {
 
 .populardesc i {
     margin-top: 30px;
+}
+
+/* Activities Section */
+.activities-section {
+    display: flex;
+    flex-direction: column;
+    /* wrap */
+}
+
+#activities {
+    font-size: 1.3em;
+}
+
+.activities {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 385px;
+}
+
+.activities h3 {
+    font-size: 0.9em;
+    margin-top: 15px;
+    padding-left: 15px;
+    height: 20px;
+}
+
+.actimg {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(190, 190, 190);
+}
+
+.actimgsolo img {
+    border-radius: 10px 10px 0px 0px;
+    height: 331px;
+    width: 100%;
+}
+
+.actimg2 {
+    display: flex;
+    flex-direction: column;
+    height: 196px;
+    width: 22%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(190, 190, 190);
+}
+
+.actimgduo2 img {
+    border-radius: 10px 10px 0px 0px;
+    height: 143px;
+    width: 100%;
+}
+
+.actimg3 {
+    display: flex;
+    flex-direction: column;
+    height: 155px;
+    width: 22%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(190, 190, 190);
+}
+
+.actimgduo3 img {
+    border-radius: 10px 10px 0px 0px;
+    height: 101px;
+    width: 100%;
+}
+
+.actimg5 {
+    display: flex;
+    flex-direction: column;
+    height: 171px;
+    width: 22%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(190, 190, 190);
+}
+
+.actimgduo5 img {
+    border-radius: 10px 10px 0px 0px;
+    height: 117px;
+    width: 100%;
+}
+
+.actimg6 {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 22%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(190, 190, 190);
+}
+
+.actimgduo6 img {
+    border-radius: 10px 10px 0px 0px;
+    height: 126px;
+    width: 100%;
 }
 
 /* Footer */
