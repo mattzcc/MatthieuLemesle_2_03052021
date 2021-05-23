@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin: 0px;
 }
 
 a {
@@ -10,6 +10,10 @@ a {
 
 img {
     object-fit: cover;
+}
+
+strong {
+    font-weight: normal;
 }
 
 #bordersize {
@@ -32,7 +36,7 @@ nav ul {
     display: flex;
     list-style: none;
     height: 50%;
-    flex-wrap: wrap-reverse;
+    flex-flow: row wrap-reverse;
 }
 
 nav li {
@@ -66,13 +70,13 @@ nav a:hover {
 
 .searchblock {
     display: flex;
-    height: 3em;
+    height: 48px;
 }
 
 .logoloc {
     background-color: #f2f2f2;
     border-color: #f2f2f2;
-    width: 3em;
+    width: 48px;
     border-radius: 1em 0em 0em 1em;
     display: flex;
     justify-content: center;
@@ -180,9 +184,9 @@ nav a:hover {
 #hebergements {
     background-color: #f2f2f2;
     border-radius: 20px;
-    width: 2fr;
     padding-left: 40px;
     padding-right: 15px;
+    max-width: 62%;
 }
 
 #hebergements h2 {
@@ -193,6 +197,8 @@ nav a:hover {
 
 .hebergements {
     display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
 }
 
 .contenthebergements {
@@ -209,15 +215,11 @@ nav a:hover {
     margin-right: 25px;
 }
 
-.contenthebergements h4 {
-    align-self: flex-start;
-}
-
 .labelhebergements {
     display: flex;
     flex-direction: column;
     max-width: 200px;
-    height: 165px;
+    height: 170px;
     padding: 5px 5px 5px 5px;
     background-color: white;
     border-radius: 10px;
@@ -258,12 +260,11 @@ nav a:hover {
 .popularsection {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-around;
     background-color: #f2f2f2;
     border-radius: 20px;
-    width: 1fr;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-left: 30px;
+    padding: 0px 40px 30px 30px;
+    max-width: 30%;
 }
 
 .populartitle {
@@ -287,16 +288,16 @@ nav a:hover {
 .popularlabel {
     display: flex;
     background-color: white;
-    width: 300px;
+    width: 100%;
     max-height: 120px;
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgb(190, 190, 190);
-    margin: 10px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
 }
 
 .popularsection a {
-    width: 300px;
+    max-width: 300px;
     max-height: 120px;
     margin: 10px 0px 10px 0px;
 }
@@ -331,7 +332,7 @@ nav a:hover {
 .activities-section {
     display: flex;
     flex-direction: column;
-    /* wrap */
+
 }
 
 #activities {
@@ -432,7 +433,9 @@ nav a:hover {
 footer {
     background-color: #f2f2f2;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
+    width: 100%;
 }
 
 footer ul {
@@ -445,5 +448,39 @@ footer li {
 }
 
 footer div {
-    width: 35%;
+    width: 32%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .popularsection {
+        max-width: 100%;
+        flex-flow: row wrap;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        padding: 0px 30px 30px 30px;
+    }
+
+    .populartitle {
+        min-width: 100%;
+    }
+
+    .popularlabel {
+        max-width: 97%;
+        max-height: 95%;
+        margin: 0px;
+    }
+
+    .popularimg img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .popularsection a {
+        margin: 0px;
+    }
+
+    #hebergements {
+        max-width: 100%;
+    }
 }
