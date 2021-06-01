@@ -481,7 +481,7 @@ footer div {
     }
 
     .popularsection a {
-        max-width: 350px;
+        max-width: 260px;
         margin: 0px;
     }
 
@@ -498,17 +498,10 @@ footer div {
     }
 }
 
-@media screen and (max-width: 1020px) {
-    .popularlabel {
-        max-width: 95%;
-        max-height: 95%;
-        margin: 0px;
-    }
-
-    .popularsection a {
-        max-width: 260px;
-        margin: 0px;
-    }
+@media screen and (max-width: 768px) {}
 
 
-}
+
+
+
+@media screen and (max-width: 411px) {}
