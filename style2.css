@@ -105,7 +105,7 @@ nav a:hover {
     width: 8em;
 }
 
-.logosearch {
+#logosearch {
     display: none;
 }
 
@@ -498,9 +498,6 @@ footer div {
         max-width: 100%;
         object-position: 50% 70%;
     }
-
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -529,7 +526,6 @@ footer div {
         grid-template-columns: 1fr 1fr;
     }
 
-
     .activities {
         flex-flow: row wrap;
         height: auto;
@@ -547,7 +543,6 @@ footer div {
     }
 
     .actimg2 {
-
         width: 48%;
         height: 195px;
         margin-bottom: 20px;
@@ -592,9 +587,54 @@ footer div {
     }
 }
 
+@media screen and (max-width: 411px) {
+    header {
+        flex-wrap: wrap;
+    }
 
+    nav {
+        align-self: flex-start;
+        width: 100%;
+    }
 
+    nav ul {
+        min-width: 100%;
+        padding: 0px 0px 0px 0px;
+    }
 
+    nav li {
+        text-align: center;
+        margin: 0px;
+        width: 50%;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #f2f2f2;
+    }
 
+    nav a {
+        display: inline-block;
+        padding-top: 0px;
+    }
 
-@media screen and (max-width: 411px) {}
+    nav a:hover {
+        display: none;
+    }
+
+    nav li:hover {
+        color: #0065fc;
+        border-bottom: 3px solid #0065fc;
+    }
+
+    .searchbutton {
+        display: none;
+    }
+
+    #logosearch {
+        background-color: #0065FC;
+        color: white;
+        height: 100%;
+        font-size: 1em;
+        border: none;
+        border-radius: 15px;
+        width: 4em;
+    }
+}
