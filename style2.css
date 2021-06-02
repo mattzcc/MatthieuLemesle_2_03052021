@@ -85,9 +85,7 @@ nav a:hover {
 
 .searchfield {
     width: 12em;
-    border-color: #f2f2f2;
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid #f2f2f2;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     font-weight: bold;
@@ -251,6 +249,7 @@ nav a:hover {
 
 .graystar {
     color: #f2f2f2;
+    height: 12.8px;
 }
 
 
@@ -319,11 +318,14 @@ nav a:hover {
 
 .populardesc p {
     font-size: 0.8em;
-    margin: 0px 0px;
+    margin: 0px 0px 5px 0px;
 }
 
-.populardesc>div {
-    margin-top: 50px;
+/* .populardesc>div {
+ position: relative;
+    top: 40px;
+    ou
+    display: inline-flex;  */
 }
 
 /* Activities Section */
@@ -483,7 +485,9 @@ footer div {
     }
 
     .populardesc>div {
-        margin-top: 5px;
+        /* margin-top: 5px; */
+        /* position: relative;
+        bottom: 10px; */
     }
 
     #hebergements {
@@ -501,12 +505,77 @@ footer div {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        margin: 0px -30px 20px -30px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {}
+
+    nav a {
+        width: 100%;
+
+
+    }
+
+    .navhebergements {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 10px;
+    }
+
+    .navactivities {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 10px;
+    }
+
+    nav a:hover {
+        display: none;
+    }
+
+    .filterstitle {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .filterbutton {
+        margin-right: auto;
+    }
+
+    .searchbutton {
+        display: none;
+    }
+
+    #logosearch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 1em;
+        width: 3em;
+        margin-left: -10px;
+    }
+
+    .searchfield {
+        border-right: none;
+    }
+
     .popularsection {
         width: 100%;
         flex-flow: column wrap;
         margin-bottom: 20px;
         justify-content: space-between;
-        padding: 0px 40px 30px 40px;
+        padding: 0px 50px 30px 40px;
     }
 
     .popularsection a {
@@ -588,53 +657,74 @@ footer div {
 }
 
 @media screen and (max-width: 411px) {
-    header {
-        flex-wrap: wrap;
+    #hebergements {
+        padding-right: 25px;
     }
 
-    nav {
-        align-self: flex-start;
+    .contenthebergements {
+        grid-template-columns: 1fr;
+    }
+
+    .actimg {
         width: 100%;
+        height: 195px;
+        margin-bottom: 20px;
     }
 
-    nav ul {
-        min-width: 100%;
-        padding: 0px 0px 0px 0px;
+    .actimgsolo img {
+        height: 140px;
+        max-width: 100%;
     }
 
-    nav li {
-        text-align: center;
-        margin: 0px;
-        width: 50%;
-        padding-bottom: 10px;
-        border-bottom: 3px solid #f2f2f2;
+    .actimg2 {
+        width: 100%;
+        height: 195px;
+        margin-bottom: 20px;
     }
 
-    nav a {
-        display: inline-block;
-        padding-top: 0px;
+    .actimgduo2 img {
+        height: 140px;
+        max-width: 100%;
     }
 
-    nav a:hover {
-        display: none;
+    .actimg3 {
+        width: 100%;
+        height: 195px;
+        margin-bottom: 20px;
     }
 
-    nav li:hover {
-        color: #0065fc;
-        border-bottom: 3px solid #0065fc;
+    .actimgduo3 img {
+        height: 140px;
+        max-width: 100%;
     }
 
-    .searchbutton {
-        display: none;
+    .actimg5 {
+        width: 100%;
+        height: 195px;
+        margin-bottom: 20px;
     }
 
-    #logosearch {
-        background-color: #0065FC;
-        color: white;
-        height: 100%;
-        font-size: 1em;
-        border: none;
-        border-radius: 15px;
-        width: 4em;
+    .actimgduo5 img {
+        height: 140px;
+        max-width: 100%;
+    }
+
+    .actimg6 {
+        width: 100%;
+        height: 195px;
+        margin-bottom: 20px;
+    }
+
+    .actimgduo6 img {
+        height: 140px;
+        max-width: 100%;
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer div {
+        width: 100%;
     }
 }
