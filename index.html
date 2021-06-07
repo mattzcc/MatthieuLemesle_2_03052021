@@ -16,13 +16,16 @@
     <!-- Header -->
     <div id="bordersize">
         <header>
-            <div class="logoreservia"><img src="./images/logo/Reservia.svg" alt="Logo Reservia"></div>
+            <div class="mobile-header">
+                <img src="./images/logo/Reservia.svg" class="logoreservia" alt="Logo Reservia">
+                <a href="#" class="mobileSinscrire">S'inscrire</a>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#hebergements">Hébergements</a></li>
-                    <li><a href="#activities">Activités</a></li>
-                    <li><a href="#" class="navSinscrire">S'inscrire</a></li>
+                    <li><a href="#hebergements" class="navHebergements">Hébergements</a></li>
+                    <li><a href="#activities" class="navActivities">Activités</a></li>
                 </ul>
+                <a href="#" class="navSinscrire">S'inscrire</a>
             </nav>
         </header>
 
@@ -36,7 +39,7 @@
                 <div class="logoloc"><i class="fas fa-map-marker-alt"></i></div>
                 <input class="searchfield" value="Marseille, France" type="text">
                 <input type="submit" class="searchbutton" value="Rechercher">
-                <div class="logosearch"><i class="fas fa-search"></i></div>
+                <i id="logosearch" class="fas fa-search"></i>
             </div>
             <div class="filters">
                 <div class="filterstitle">Filtres</div>
