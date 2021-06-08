@@ -696,7 +696,7 @@ footer div {
 @media screen and (max-width: 500px) {
     #hebergements {
         max-width: 100%;
-        padding: 0 8px 0 25px;
+        padding: 0 6px 0 25px;
     }
 
     .contenthebergements a {
@@ -727,7 +727,7 @@ footer div {
     }
 
     .popularsection {
-        padding: 0 8px 20px 25px;
+        padding: 0 6px 20px 25px;
     }
 
     .popularimg img {
