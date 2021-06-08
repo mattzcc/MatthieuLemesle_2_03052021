@@ -493,12 +493,13 @@ footer div {
     }
 
     .populardesc {
+        padding-left: 8px;
         overflow: auto;
         text-overflow: ellipsis;
     }
 
     .popularimg img {
-        min-width: 100%;
+        width: 100px;
         max-height: 100%;
     }
 
@@ -511,7 +512,7 @@ footer div {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 846px) {
     header {
         flex-wrap: wrap;
         margin: 0 -30px 20px -30px;
@@ -610,8 +611,16 @@ footer div {
         width: 100%;
     }
 
+    .popularimg img {
+        width: 130px;
+    }
+
     .populardesc {
         position: relative;
+    }
+
+    .populardesc h2 {
+        margin-bottom: 2px;
     }
 
     .populardesc>div {
@@ -686,16 +695,51 @@ footer div {
 
 @media screen and (max-width: 500px) {
     #hebergements {
-        width: 100%;
-        padding: 0 10px 0 40px;
+        max-width: 100%;
+        padding: 0 16px 0 25px;
     }
 
     .contenthebergements a {
         width: 90%;
+        margin-right: 0px;
+        margin-bottom: 40px;
     }
 
     .contenthebergements {
         grid-template-columns: 1fr;
+    }
+
+    #hebergements h3 {
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+
+    .populartitle i {
+        margin-right: 0;
+        padding-right: 13px;
+    }
+
+    .popularsection a {
+        width: 90%;
+        margin-bottom: 15px;
+        padding-bottom: 0px;
+        margin-right: 0px;
+    }
+
+    .popularsection {
+        padding: 0 16px 20px 25px;
+    }
+
+    .popularimg img {
+        width: 90px;
+    }
+
+    .populardesc {
+        padding: 2px 0 0 5px;
+    }
+
+    .populardesc>div {
+        bottom: 0px;
     }
 
     .actimg {
