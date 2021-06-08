@@ -87,7 +87,7 @@ nav a:hover {
 }
 
 .searchfield {
-    width: 12em;
+    width: 192px;
     border: #f2f2f2 solid 1px;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
@@ -103,7 +103,8 @@ nav a:hover {
     font-weight: bold;
     border: none;
     border-radius: 0 1em 1em 0;
-    width: 8em;
+    width: 128px;
+    cursor: pointer;
 }
 
 #logosearch {
@@ -156,6 +157,7 @@ nav a:hover {
 .filterbutton:hover {
     background-color: #0065FC;
     color: white;
+    cursor: pointer;
 }
 
 .info {
@@ -195,9 +197,14 @@ nav a:hover {
     width: 63%;
 }
 
-#hebergements h2 {
+#hebergements h1 {
     margin-top: 30px;
+    margin-bottom: 15px;
     font-size: 1.3em;
+}
+
+#hebergements h3 {
+    font-size: 0.9em;
 }
 
 .contenthebergements {
@@ -222,7 +229,7 @@ nav a:hover {
     box-shadow: 0 0 15px rgb(190, 190, 190);
 }
 
-.labeldescription h3 {
+.labeldescription h2 {
     font-size: 0.9em;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -258,24 +265,25 @@ nav a:hover {
     justify-content: space-around;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 0 30px 30px 30px;
+    padding: 0 40px 30px 30px;
     width: 25%;
 }
 
 .populartitle {
     display: flex;
     justify-content: space-between;
-    font-size: 0.9em;
 }
 
-.populartitle h2 {
+.populartitle h1 {
     margin-top: 18px;
     margin-bottom: 0;
+    font-size: 1.3em;
 }
 
 .populartitle i {
     font-size: 1.3em;
     margin-top: 22px;
+    margin-right: -11px;
 }
 
 .popularlabel {
@@ -307,7 +315,7 @@ nav a:hover {
     padding: 5px 0 0 15px;
 }
 
-.populardesc h3 {
+.populardesc h2 {
     font-size: 0.9em;
     margin-top: 0;
     margin-bottom: 5px;
@@ -337,7 +345,7 @@ nav a:hover {
     height: 385px;
 }
 
-.activities h3 {
+.activities h2 {
     font-size: 0.9em;
     margin-top: 8px;
     margin-bottom: 20px;
@@ -431,6 +439,7 @@ footer {
 footer ul {
     list-style: none;
     line-height: 25px;
+    padding-left: 30px;
 }
 
 footer li {
@@ -476,16 +485,15 @@ footer div {
     }
 
     .logochart i {
-        padding-right: 10px;
+        padding-right: 20px;
     }
 
     .popularlabel {
         width: 100%;
-
     }
 
     .populardesc {
-        overflow: hidden;
+        overflow: auto;
         text-overflow: ellipsis;
     }
 
@@ -583,6 +591,7 @@ footer div {
         border-radius: 1em;
         width: 3em;
         margin-left: -10px;
+        cursor: pointer;
     }
 
     .searchfield {
@@ -678,7 +687,7 @@ footer div {
 @media screen and (max-width: 500px) {
     #hebergements {
         width: 100%;
-        padding: 0 20px 0 40px;
+        padding: 0 10px 0 40px;
     }
 
     .contenthebergements a {
