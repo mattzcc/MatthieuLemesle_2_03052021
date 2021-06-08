@@ -448,17 +448,35 @@ footer div {
         margin-top: 10px;
     }
 
+    #hebergements {
+        width: 100%;
+        padding-right: 25px;
+    }
+
+    .labelhebergements {
+        min-width: 100%;
+    }
+
+    .labelimg img {
+        max-width: 100%;
+        object-position: 50% 70%;
+    }
+
     .popularsection {
         width: 100%;
         flex-flow: row wrap;
         margin-bottom: 20px;
         justify-content: space-between;
-        padding: 0 40px 30px 40px;
+        padding: 0 30px 10px 40px;
     }
 
     .populartitle {
         min-width: 100%;
-        margin: 20px 0 10px 0;
+        margin: 10px 0 5px 0;
+    }
+
+    .logochart i {
+        padding-right: 10px;
     }
 
     .popularlabel {
@@ -482,19 +500,6 @@ footer div {
         margin-right: 10px;
         padding-bottom: 15px;
         padding-right: 10px;
-    }
-
-    #hebergements {
-        width: 100%;
-    }
-
-    .labelhebergements {
-        min-width: 100%;
-    }
-
-    .labelimg img {
-        max-width: 100%;
-        object-position: 50% 70%;
     }
 }
 
@@ -683,10 +688,6 @@ footer div {
     .contenthebergements {
         grid-template-columns: 1fr;
     }
-
-    /* .popularsection {
-        width: 100%;
-    } */
 
     .actimg {
         width: 100%;
