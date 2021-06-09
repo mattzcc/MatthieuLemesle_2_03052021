@@ -1,0 +1,287 @@
+/* General */
+
+@import url("./hebergements.css");
+@import url("./activities.css");
+@import url("./footer.css");
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    object-fit: cover;
+}
+
+strong {
+    font-weight: normal;
+}
+
+#bordersize {
+    margin: 30px 30px 0 30px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileSinscrire {
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    height: 50%;
+}
+
+nav li {
+    margin: 0 30px 0 30px;
+}
+
+nav a {
+    padding-top: 35px;
+}
+
+nav a:hover {
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+}
+
+.navSinscrire {
+    color: #0065fc;
+    font-weight: bold;
+    margin-top: -40px;
+    margin-left: 30px;
+}
+
+/* Search Filters */
+.searchtitle h1 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.searchtitle p {
+    font-size: 1em;
+}
+
+.searchblock {
+    display: flex;
+    height: 48px;
+}
+
+.logoloc {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    width: 48px;
+    border-radius: 1em 0 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchfield {
+    width: 192px;
+    border: #f2f2f2 solid 1px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.searchbutton {
+    background-color: #0065FC;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1em 1em 0;
+    width: 128px;
+    cursor: pointer;
+}
+
+#logosearch {
+    display: none;
+}
+
+.filters {
+    display: flex;
+    font-size: 1em;
+    color: black;
+    margin: 40px 0 20px 0;
+    font-weight: bold;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filterstitle {
+    margin-right: 35px;
+}
+
+.filterbutton {
+    display: flex;
+    flex-wrap: wrap;
+    border-color: #f2f2f2;
+    border-width: 2px;
+    border-style: solid;
+    border-left: none;
+    border-radius: 40px;
+    height: 42px;
+    margin-right: 20px;
+}
+
+.logo {
+    font-size: 1em;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: #DEEBFF solid 12px;
+    border-radius: 40px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    margin-top: -1px;
+}
+
+.filtername {
+    margin-right: 20px;
+    padding: 11px;
+}
+
+.filterbutton:hover {
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.logoinfo i {
+    font-size: 0.8em;
+    color: #0065FC;
+    background-color: white;
+    border: #f2f2f2 solid 2px;
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1366px) {
+
+    .filterstitle,
+    .filterbutton {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 846px) {
+
+    header {
+        flex-wrap: wrap;
+        margin: 0 -30px 20px -30px;
+    }
+
+    .mobile-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobileSinscrire {
+        color: #0065fc;
+        font-weight: bold;
+        display: block;
+        padding-right: 20px;
+    }
+
+    .navSinscrire {
+        display: none;
+        width: 0%;
+        margin: 0;
+    }
+
+    header img {
+        padding-left: 20px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 0;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav li:hover {
+        border-bottom: 3px solid #0065fc;
+    }
+
+    nav a:hover {
+        display: none;
+    }
+
+    .filterstitle {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .filterbutton {
+        margin-right: auto;
+    }
+
+    .searchbutton {
+        display: none;
+    }
+
+    #logosearch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 1em;
+        width: 3em;
+        margin-left: -10px;
+        cursor: pointer;
+    }
+
+    .searchfield {
+        border-right: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {}
