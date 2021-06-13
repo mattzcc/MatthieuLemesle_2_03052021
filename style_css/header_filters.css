@@ -27,27 +27,18 @@ header {
     justify-content: space-between;
 }
 
-.mobileSinscrire {
-    display: none;
-}
-
 nav {
     display: flex;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    height: 50%;
-}
-
-nav li {
-    margin: 0 30px 0 30px;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 45%;
 }
 
 nav a {
-    padding-top: 35px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    height: 100%;
 }
 
 nav a:hover {
@@ -55,17 +46,18 @@ nav a:hover {
     border-top: 3px solid #0065fc;
 }
 
-.navSinscrire {
+.navsubscribe {
     color: #0065fc;
     font-weight: bold;
-    margin-top: -40px;
-    margin-left: 30px;
+    /* margin-top: -40px;
+    margin-left: 30px; */
 }
 
 /* Search Filters */
 .search h1 {
     font-weight: bold;
     font-size: 1.3em;
+    margin-top: 20px;
 }
 
 .search p {
@@ -199,26 +191,6 @@ nav a:hover {
         margin: 0 -30px 20px -30px;
     }
 
-    .mobile-header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .mobileSinscrire {
-        color: #0065fc;
-        font-weight: bold;
-        display: block;
-        padding-right: 20px;
-    }
-
-    .navSinscrire {
-        display: none;
-        width: 0%;
-        margin: 0;
-    }
-
     header img {
         padding-left: 20px;
     }
@@ -246,6 +218,16 @@ nav a:hover {
 
     nav a:hover {
         display: none;
+    }
+
+    .navhebergements {
+        display: flex;
+        width: 50%;
+    }
+
+    .navactivities {
+        display: flex;
+        width: 50%;
     }
 
     .filterstitle {
