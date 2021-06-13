@@ -149,6 +149,8 @@
 
 @media screen and (max-width: 1366px) {
 
+    /* Hebergements Section */
+
     .hebergements {
         flex-wrap: wrap-reverse;
     }
@@ -166,6 +168,8 @@
         max-width: 100%;
         object-position: 50% 70%;
     }
+
+    /* Popular Section */
 
     .popularsection {
         width: 100%;
@@ -211,6 +215,14 @@
 
 @media screen and (max-width: 846px) {
 
+    /* Hebergements Section */
+
+    .contenthebergements {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Popular Section */
+
     .popularsection {
         width: 100%;
         flex-flow: column wrap;
@@ -240,13 +252,11 @@
         bottom: 10px;
     }
 
-    .contenthebergements {
-        grid-template-columns: 1fr 1fr;
-    }
-
 }
 
 @media screen and (max-width: 500px) {
+
+    /* Hebergements Section */
 
     .hebergements {
         margin: 0 -30px 20px -30px;
@@ -259,12 +269,13 @@
         padding: 0;
     }
 
-    #hebergements h1 {
-        padding-left: 30px;
+    #hebergements h2 {
+        margin-top: 10px;
+        padding-left: 35px;
     }
 
     .contenthebergements a {
-        width: 84%;
+        width: 85%;
         margin-right: 0px;
         margin-bottom: 40px;
         padding-right: 10px;
@@ -276,18 +287,24 @@
     }
 
     #hebergements h3 {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         margin-top: 0px;
+    }
+
+    #hebergements h4 {
+        font-size: 0.9em;
         padding-left: 30px;
     }
 
+    /* Popular Section */
+
     .populartitle h2 {
-        padding-left: 22px;
+        padding-left: 32px;
     }
 
     .populartitle i {
         margin-right: 0;
-        padding-right: 30px;
+        padding-right: 32px;
     }
 
     .popularsection a {

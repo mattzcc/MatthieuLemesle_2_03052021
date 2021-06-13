@@ -22,6 +22,7 @@ strong {
 }
 
 /* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -175,6 +176,8 @@ nav a:hover {
 
 @media screen and (max-width: 1366px) {
 
+    /* Search Filters */
+
     .filterstitle,
     .filterbutton {
         margin-top: 10px;
@@ -183,6 +186,8 @@ nav a:hover {
 }
 
 @media screen and (max-width: 846px) {
+
+    /* Header */
 
     header {
         display: inline;
@@ -201,7 +206,6 @@ nav a:hover {
         display: flex;
         justify-content: center;
         width: 50%;
-        /* border-top: 3px solid transparent; */
         border-bottom: 3px solid #f2f2f2;
         padding-bottom: 15px;
     }
@@ -231,6 +235,8 @@ nav a:hover {
         border-top: 3px solid transparent;
         border-bottom: 3px solid #0065fc;
     }
+
+    /* Search Filters */
 
     .filterstitle {
         display: inline-block;
