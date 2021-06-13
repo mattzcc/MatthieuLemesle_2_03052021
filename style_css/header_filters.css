@@ -68,12 +68,12 @@ nav a:hover {
 }
 
 /* Search Filters */
-.searchtitle h1 {
+.search h1 {
     font-weight: bold;
     font-size: 1.3em;
 }
 
-.searchtitle p {
+.search p {
     font-size: 1em;
 }
 
