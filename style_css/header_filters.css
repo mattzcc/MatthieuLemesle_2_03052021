@@ -1,9 +1,4 @@
 /* General */
-
-@import url("./hebergements.css");
-@import url("./activities.css");
-@import url("./footer.css");
-
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -283,5 +278,3 @@ nav a:hover {
     }
 
 }
-
-@media screen and (max-width: 500px) {}
