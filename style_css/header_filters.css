@@ -22,32 +22,24 @@ strong {
 }
 
 /* Header */
+
 header {
     display: flex;
     justify-content: space-between;
 }
 
-.mobileSinscrire {
-    display: none;
-}
-
 nav {
     display: flex;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    height: 50%;
-}
-
-nav li {
-    margin: 0 30px 0 30px;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 45%;
 }
 
 nav a {
-    padding-top: 35px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    height: 100%;
 }
 
 nav a:hover {
@@ -55,17 +47,16 @@ nav a:hover {
     border-top: 3px solid #0065fc;
 }
 
-.navSinscrire {
+.navsubscribe {
     color: #0065fc;
     font-weight: bold;
-    margin-top: -40px;
-    margin-left: 30px;
 }
 
 /* Search Filters */
 .search h1 {
     font-weight: bold;
     font-size: 1.3em;
+    margin-top: 20px;
 }
 
 .search p {
@@ -185,6 +176,8 @@ nav a:hover {
 
 @media screen and (max-width: 1366px) {
 
+    /* Search Filters */
+
     .filterstitle,
     .filterbutton {
         margin-top: 10px;
@@ -194,59 +187,56 @@ nav a:hover {
 
 @media screen and (max-width: 846px) {
 
+    /* Header */
+
     header {
-        flex-wrap: wrap;
-        margin: 0 -30px 20px -30px;
-    }
-
-    .mobile-header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .mobileSinscrire {
-        color: #0065fc;
-        font-weight: bold;
-        display: block;
-        padding-right: 20px;
-    }
-
-    .navSinscrire {
-        display: none;
-        width: 0%;
-        margin: 0;
+        display: inline;
     }
 
     header img {
-        padding-left: 20px;
+        padding-bottom: 5px;
     }
 
     nav {
         width: 100%;
+        display: flex;
     }
 
-    nav ul {
-        width: 100%;
-        padding: 0;
-    }
-
-    nav li {
-        margin: 0;
+    .navhebergements {
+        display: flex;
+        justify-content: center;
+        width: 50%;
         border-bottom: 3px solid #f2f2f2;
-        padding-bottom: 10px;
-        width: 100%;
-        text-align: center;
+        padding-bottom: 15px;
     }
 
-    nav li:hover {
-        border-bottom: 3px solid #0065fc;
+    .navactivities {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 15px;
+    }
+
+    .navsubscribe {
+        height: 25px;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+
+    .navsubscribe:hover {
+        color: #0065FC;
+        border-bottom: 3px solid transparent;
     }
 
     nav a:hover {
-        display: none;
+        color: black;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid #0065fc;
     }
+
+    /* Search Filters */
 
     .filterstitle {
         display: inline-block;
