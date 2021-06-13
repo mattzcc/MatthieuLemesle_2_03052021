@@ -1,7 +1,6 @@
 /* Hebergements Section */
 .hebergements {
     display: flex;
-    flex-wrap: wrap-reverse;
     justify-content: space-between;
 }
 
@@ -149,6 +148,10 @@
 }
 
 @media screen and (max-width: 1366px) {
+
+    .hebergements {
+        flex-wrap: wrap-reverse;
+    }
 
     #hebergements {
         width: 100%;
